@@ -6,9 +6,9 @@
       <table class="table table-dark table-striped table-hover">
         <thead>
           <tr>
-            <th scope="col">Currency</th>
-            <th scope="col">Code</th>
-            <th scope="col">Mid</th>
+            <th scope="col">Waluta</th>
+            <th scope="col">Kod</th>
+            <th scope="col">Kurs</th>
           </tr>
         </thead>
         <tbody>

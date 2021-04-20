@@ -22,7 +22,7 @@
           aria-expanded="false"
           aria-controls="collapseTable"
         >
-          Kursy Walut
+          Aktualne Kursy Walut
         </button>
         <div class="mt-4 collapse" id="collapseTable">
           <div class="card card-body content-container">
@@ -41,7 +41,7 @@
           aria-expanded="false"
           aria-controls="collapseConverter"
         >
-          Przelicznik Walut
+          Przykładowe Funkcje
         </button>
         <div class="mt-4 collapse" id="collapseConverter">
           <div class="card card-body content-container">
@@ -60,7 +60,7 @@
           aria-expanded="false"
           aria-controls="collapseChart1"
         >
-          Wykres Walut - Funt Szterling (Ostatnie 10 pozycji)
+          Wykres- Funt Szterling
         </button>
         <div class="mt-4 collapse" id="collapseChart1">
           <div class="card card-body content-container">
@@ -79,7 +79,7 @@
           aria-expanded="false"
           aria-controls="collapseChart2"
         >
-          Wykres Walut - Euro (Ostatnie 10 pozycji)
+          Wykres- Euro
         </button>
         <div class="mt-4 collapse" id="collapseChart2">
           <div class="card card-body content-container">

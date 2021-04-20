@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="getStarted">
-      <button type="button" v-on:click="getTested()">Zaczynajmy!</button>
+      <button type="button" v-on:click="getTested()">Start</button>
     </div>
     <div id="mainApp" style="display: none">
       <table>
