@@ -56,13 +56,13 @@
           class="btn btn-light"
           type="button"
           data-toggle="collapse"
-          data-target="#collapseChart "
+          data-target="#collapseChart1"
           aria-expanded="false"
-          aria-controls="collapseChart"
+          aria-controls="collapseChart1"
         >
           Wykres Walut - Funt Szterling (Ostatnie 10 pozycji)
         </button>
-        <div class="mt-4 collapse" id="collapseChart">
+        <div class="mt-4 collapse" id="collapseChart1">
           <div class="card card-body content-container">
             <ChartContainer v-if="this.gbpDataSeries !== null" :currencyData="this.gbpDataSeries" />
           </div>
@@ -75,13 +75,13 @@
           class="btn btn-light"
           type="button"
           data-toggle="collapse"
-          data-target="#collapseChart "
+          data-target="#collapseChart2"
           aria-expanded="false"
-          aria-controls="collapseChart"
+          aria-controls="collapseChart2"
         >
           Wykres Walut - Euro (Ostatnie 10 pozycji)
         </button>
-        <div class="mt-4 collapse" id="collapseChart">
+        <div class="mt-4 collapse" id="collapseChart2">
           <div class="card card-body content-container">
             <ChartContainer v-if="this.eurDataSeries !== null" :currencyData="this.eurDataSeries" />
           </div>
@@ -113,7 +113,7 @@ export default {
     this.loadedEur = false;
     // Kurs Funta szterlinga (10 dni)
     axios
-      .get('http://api.nbp.pl/api/exchangerates/rates/a/gbp/last/10/?format=json')
+      .get('https://api.nbp.pl/api/exchangerates/rates/a/gbp/last/10/?format=json')
       .then((response) => {
         this.gbpDataSeries = response.data.rates;
       })
@@ -127,7 +127,7 @@ export default {
 
     //  kurs Euro
     axios
-      .get('http://api.nbp.pl/api/exchangerates/rates/a/eur/last/10/?format=json')
+      .get('https://api.nbp.pl/api/exchangerates/rates/a/eur/last/10/?format=json')
       .then((response) => {
         this.eurDataSeries = response.data.rates;
       })

@@ -103,10 +103,10 @@ export default {
     };
   },
   mounted: function() {
-    //axios.get('https://my.api.mockaroo.com/usddat.json?key=48a0ba60').then((response) => (this.currDataUSD = response.data));
-    //axios.get('https://my.api.mockaroo.com/euval.json?key=48a0ba60').then((response) => (this.currDataEUR = response.data));
-    //axios.get('https://my.api.mockaroo.com/chfval.json?key=48a0ba60').then((response) => (this.currDataCHF = response.data));
-    //axios.get('https://my.api.mockaroo.com/nokval.json?key=48a0ba60').then((response) => (this.currDataNOK = response.data));
+    axios.get('https://my.api.mockaroo.com/usddat.json?key=48a0ba60').then((response) => (this.currDataUSD = response.data));
+    axios.get('https://my.api.mockaroo.com/euval.json?key=48a0ba60').then((response) => (this.currDataEUR = response.data));
+    axios.get('https://my.api.mockaroo.com/chfval.json?key=48a0ba60').then((response) => (this.currDataCHF = response.data));
+    axios.get('https://my.api.mockaroo.com/nokval.json?key=48a0ba60').then((response) => (this.currDataNOK = response.data));
   },
   methods: {
     getTested: function() {

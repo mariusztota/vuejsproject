@@ -35,7 +35,7 @@ export default {
   },
   mounted() {
     axios
-      .get('http://api.nbp.pl/api/exchangerates/tables/a/')
+      .get('https://api.nbp.pl/api/exchangerates/tables/a/')
       .then((response) => (this.currency = response.data[0].rates))
       .catch((error) => {
         console.log(error);
